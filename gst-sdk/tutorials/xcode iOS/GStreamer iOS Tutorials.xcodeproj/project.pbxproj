@@ -115,6 +115,10 @@
 		C6EB85BA173BEFF800C3953D /* appicon-4-iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6EB85B6173BEFF800C3953D /* appicon-4-iPad@2x.png */; };
 		C6EB85BB173BEFF800C3953D /* appicon-4-iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = C6EB85B7173BEFF800C3953D /* appicon-4-iPhone.png */; };
 		C6EB85BC173BEFF800C3953D /* appicon-4-iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6EB85B8173BEFF800C3953D /* appicon-4-iPhone@2x.png */; };
+		D02E0BDF1B980CDC006536D9 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02E0BDD1B980CDC006536D9 /* VideoToolbox.framework */; };
+		D02E0BE01B980CDC006536D9 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02E0BDD1B980CDC006536D9 /* VideoToolbox.framework */; };
+		D02E0BE11B980CDC006536D9 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02E0BDD1B980CDC006536D9 /* VideoToolbox.framework */; };
+		D02E0BE21B980D23006536D9 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02E0BDD1B980CDC006536D9 /* VideoToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -254,6 +258,7 @@
 		C6EB85B6173BEFF800C3953D /* appicon-4-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appicon-4-iPad@2x.png"; sourceTree = "<group>"; };
 		C6EB85B7173BEFF800C3953D /* appicon-4-iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appicon-4-iPhone.png"; sourceTree = "<group>"; };
 		C6EB85B8173BEFF800C3953D /* appicon-4-iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appicon-4-iPhone@2x.png"; sourceTree = "<group>"; };
+		D02E0BDD1B980CDC006536D9 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = /System/Library/Frameworks/VideoToolbox.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +279,7 @@
 			files = (
 				C67B4100172FC7F4008359CC /* UIKit.framework in Frameworks */,
 				C67B4101172FC7F4008359CC /* Foundation.framework in Frameworks */,
+				D02E0BE21B980D23006536D9 /* VideoToolbox.framework in Frameworks */,
 				C67B4102172FC7F4008359CC /* CoreGraphics.framework in Frameworks */,
 				C67B4103172FC7F4008359CC /* GStreamer.framework in Frameworks */,
 			);
@@ -285,6 +291,7 @@
 			files = (
 				C68B1D8917465EB7004FD7D0 /* UIKit.framework in Frameworks */,
 				C68B1D8A17465EB7004FD7D0 /* Foundation.framework in Frameworks */,
+				D02E0BE11B980CDC006536D9 /* VideoToolbox.framework in Frameworks */,
 				C68B1D8B17465EB7004FD7D0 /* CoreGraphics.framework in Frameworks */,
 				C68B1D8C17465EB7004FD7D0 /* GStreamer.framework in Frameworks */,
 			);
@@ -296,6 +303,7 @@
 			files = (
 				C6B6126017395CF2003FC410 /* UIKit.framework in Frameworks */,
 				C6B6126117395CF2003FC410 /* Foundation.framework in Frameworks */,
+				D02E0BDF1B980CDC006536D9 /* VideoToolbox.framework in Frameworks */,
 				C6B6126217395CF2003FC410 /* CoreGraphics.framework in Frameworks */,
 				C6B6126317395CF2003FC410 /* GStreamer.framework in Frameworks */,
 			);
@@ -307,6 +315,7 @@
 			files = (
 				C6EB8582173BEE5E00C3953D /* UIKit.framework in Frameworks */,
 				C6EB8583173BEE5E00C3953D /* Foundation.framework in Frameworks */,
+				D02E0BE01B980CDC006536D9 /* VideoToolbox.framework in Frameworks */,
 				C6EB8584173BEE5E00C3953D /* CoreGraphics.framework in Frameworks */,
 				C6EB8585173BEE5E00C3953D /* GStreamer.framework in Frameworks */,
 			);
@@ -343,6 +352,7 @@
 		C67B40CB172EBEA3008359CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D02E0BDD1B980CDC006536D9 /* VideoToolbox.framework */,
 				C67B40CC172EBEA3008359CC /* UIKit.framework */,
 				C67B40CE172EBEA3008359CC /* Foundation.framework */,
 				C67B40D0172EBEA3008359CC /* CoreGraphics.framework */,
@@ -1005,7 +1015,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
-				VALID_ARCHS = "armv7 i386";
+				VALID_ARCHS = "armv7 i386 arm64";
 			};
 			name = Debug;
 		};
@@ -1016,7 +1026,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
-				VALID_ARCHS = "armv7 i386";
+				VALID_ARCHS = "armv7 i386 arm64";
 			};
 			name = Release;
 		};
